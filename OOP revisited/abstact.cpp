@@ -22,7 +22,16 @@ int main() {
     Circle circle; // Create an object of derived class
     shape = &circle; // Point to the derived class object
     shape->draw(); // Call the draw function (runtime polymorphism)
-    
+
+
+    Circle * circle2;
+    circle2 = &circle;
+    circle2->draw();
+
+
+    // Abstract class cannot be instantiated
+    // But as a superclass it can be used to create a pointer or reference to the derived class object
+
     
     return 0;
 }
